@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <li>
+      <title>Qalyn calculator</title> 
+    </li>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url('Background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  background-size: 100% 100%;}
+      </style> 
+
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+   ` 
+        <div class="row">
+          
+            <div class="col col-sm-12">
+            
+                <h1> Qalyn mal calculator</h1>
+                <h3 class="calculator__subtitle">Bride's/Groom's education</h3>
+                <select class="bride-education">
+                  <option class="education-option">Undergraduate degree</option>
+                  <option class="education-option">College degree</option>
+                  <option class="education-option">High school degree</option>
+                  <option class="education-option">Middle school degree</option>
+                </select>
+        
+        
+        
+                <h3 class="calculator__subtitle">Bride's/Groom's family net worth</h3>
+                <select class="family-net">
+                  <option class="family-option">More than 100,000$</option>
+                  <option class="family-option">Between 50,000$ and 100,000$</option>
+                  <option class="family-option">Less than 50,000$</option>
+                </select>
+        
+                
+        <br><br>
+        
+        
+        
+        <h3 class="calculator__subtitle">Bride's/Groom's skills</h3>
+        
+            <label for="skill1" class="container">
+                <input type="checkbox" id ="skill1" value="100">
+                <span class="checkmark"></span>
+                Playing on dombra (+100$)
+              </label>
+        
+              <br>
+        
+              <label for="skill2" class="container">
+                <input type="checkbox" id ="skill2" value="200">
+                <span class="checkmark"></span>
+                Good cook (+200$)
+              </label>
+        
+              <br>
+        
+              <label for="skill3" class="container">
+                <input type="checkbox" id ="skill3" value="150">
+                <span class="checkmark"></span>
+                Easygoing character (+150$)
+              </label>
+        
+              <br>
+              
+              <label for="skill4" class="container">
+                <input type="checkbox" id ="skill4" value="100">
+                <span class="checkmark"></span>
+                Sings well (+100$)
+              </label>
+              
+        <br>
+           
+        <h3 class="calculator__subtitle">Bride's/Groom's age</h3>
+        <div>
+            <form action="" id="agefound" onsubmit="return false;">
+                <div class="cont_order">       
+                        <label for="" class="radiolabel">
+                            <input type="radio" name="agecount" value="18" onclick="calculateTotal() ">Between 18-23 
+                        </label>  <br>
+                        <label for="" class="radiolabel">
+                            <input type="radio" name="agecount" value="24" onclick="calculateTotal()"> Between 24-27
+                        </label> <br>
+                        <label for="" class="radiolabel">
+                            <input type="radio" name="agecount" value="28" onclick="calculateTotal()"> 28+
+                        </label> <br>
+                        
+
+                        <h5 class="calculator__subtitle">Bride's/Groom's reputation</h5>
+                  
+                        <label for="reputation1" class="container">
+                            <input type="checkbox" id ="reputation1" value="0.85">
+                            <span class="checkmark"></span>
+                            Gossips about his/her parent's attitude (*0.85)
+                          </label>
+                    
+                          <br>
+                    
+                          <label for="reputation2" class="container">
+                            <input type="checkbox" id ="reputation2" value="0.9">
+                            <span class="checkmark"></span>
+                            Gossips about his/her character  (*0.9)
+                          </label>
+                    
+                          <br>
+                    
+                          <label for="reputation3" class="container">
+                            <input type="checkbox" id ="reputation3" value="200">
+                            <span class="checkmark"></span>
+                            General gossips around his/her person(-200$)
+                          </label> 
+                    <br>
+                    
+              <button id="submit-quote">Calculate Price</button>
+
+              </div>
+              <div class="calculator calculator__your-quote">
+                <h2 class="calculator__title">Your Price</h2>
+                <h3 class="price">$...</h3>
+            
+              </div>
+            </div>
+            
+             
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
